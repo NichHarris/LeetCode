@@ -1,3 +1,3 @@
-# LeetCode-Practice
+# LeetCode
 
 Solutions to LeetCode problems
