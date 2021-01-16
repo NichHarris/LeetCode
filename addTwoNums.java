@@ -1,12 +1,14 @@
-class addTwoNums {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode output = new ListNode(0);
         ListNode first = l1, second = l2, current = output;
@@ -31,9 +33,5 @@ class addTwoNums {
             current.next = new ListNode(carry);
         }
         return output.next;
-    }
-
-    public static void main(String[] args){
-        //Test cases here
     }
 }
